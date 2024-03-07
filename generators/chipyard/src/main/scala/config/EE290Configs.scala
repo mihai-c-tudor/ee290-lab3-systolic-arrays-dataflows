@@ -16,11 +16,13 @@ import org.chipsalliance.cde.config.{Config, Parameters}
 
 class GemminiEE290Lab3RocketConfig extends Config(
   new gemmini.GemminiEE290Lab3Config ++
+  // new freechips.rocketchip.subsystem.WithoutTLMonitors ++
   new freechips.rocketchip.subsystem.WithNBigCores(1) ++
   new chipyard.config.AbstractConfig)
 
 class GemminiEE290Lab3BigSPRocketConfig extends Config(
   new gemmini.GemminiEE290Lab3LargeSPConfig ++
+  // new freechips.rocketchip.subsystem.WithoutTLMonitors ++
   new freechips.rocketchip.subsystem.WithNBigCores(1) ++
   new chipyard.config.AbstractConfig)
 
